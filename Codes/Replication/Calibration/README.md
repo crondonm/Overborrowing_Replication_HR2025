@@ -12,9 +12,19 @@ This folder contains all the necessary files to replicate the estimation of the 
 
 ### Instructions
 
-Run the file `Table1_Calibration.m` in Matlab.
+Make sure you have downloaded the datafiles from our repository.
 
-If you want to replicate the full optimization algorithm, set the variable `replicate` to `true`.
+[http://tiny.cc/HR2025rep](http://tiny.cc/HR2025rep)
+
+Save the data files in the following directory:
+
+```
+./Replication/Data/
+```
+
+Run the file `Table1_Calibration.m` in Matlab. By default, it will replicate table 1 in the paper.
+
+If you want to replicate the full optimization algorithm, set the variable `replicate` to `true`. 
 
 Matlab's global optimization toolbox is required to run the code. Full execution time is around 3 hours in a Macbook Pro M1 Max with 32 gigas of RAM.
 

@@ -101,7 +101,7 @@ With the .mat files containing the solutions from the previously solved models, 
 
 To replicate the figures, you have two options. The first one is to run the file `main_file.m`, which will generate all the `.mat` files needed. The second option is to download our data from:
 
-[http://tiny.cc/dataOverHR](http://tiny.cc/dataOverHR)
+[http://tiny.cc/HR2025rep](http://tiny.cc/HR2025rep)
 
 Download the data and place it in the folder:
 
@@ -113,7 +113,7 @@ Then, you can run run the individual files located in the Figures folder. Subfol
 
 ## 4. Tables
 
-The Tables folder contains the files that generate each table in the paper. Similar to the figures, you can either run `main_file.m` to generate the `.mat` files or download our data from the [link above](http://tiny.cc/dataOverHR) and place it in the ``Data`` folder.
+The Tables folder contains the files that generate each table in the paper. Similar to the figures, you can either run `main_file.m` to generate the `.mat` files or download our data from the [link above](http://tiny.cc/HR2025rep) and place it in the ``Data`` folder.
 
 ## 5. Calibration
 
