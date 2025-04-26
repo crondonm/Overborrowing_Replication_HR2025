@@ -249,6 +249,10 @@ xticks(-5:-1);
 %ylim([-0.5 .07 ]) ;
 set(gca,'FontSize',Format.FontSizeAxes)
 set(f9,'PaperPositionMode', 'auto')
-saveas(f9,'Figure9','png');
+%saveas(f9,'Figure9','png');
 
+filename = 'Figure9.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 

@@ -265,4 +265,9 @@ fig.Position(3) = fig.Position(3) + 375;
 fig.Position(4) = fig.Position(4) + 75;
 
 % Save figure
-saveas(ff,'Figure10','png');
+%saveas(ff,'Figure10','png');
+
+filename = 'Figure10.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);

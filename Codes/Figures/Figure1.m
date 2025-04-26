@@ -254,5 +254,10 @@ Lgnd = legend('show');
 Lgnd.Position(1) = 0.384;
 Lgnd.Position(2) = 0.02651;
 
-saveas(f1, 'Figure1', 'png');
+%saveas(f1, 'Figure1', 'png');
+
+filename = 'Figure1.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 

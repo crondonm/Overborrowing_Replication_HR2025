@@ -80,6 +80,9 @@ ylabel('Probability','FontSize',Format.FontSize, 'Interpreter','Latex')
 xlabel('Welfare Gain (\%)','FontSize',Format.FontSize, 'Interpreter','Latex')
 legend('Full Information','Imperfect Information','Location','NorthEast','FontSize',14)
 set(gca,'FontSize',Format.FontSizeAxes)
-saveas(f6,'Figure6_Dist_Welfare','png');
-
+%saveas(f6,'Figure6_Dist_Welfare','png');
+filename = 'Figure6.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 

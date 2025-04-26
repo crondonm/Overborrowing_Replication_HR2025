@@ -213,13 +213,13 @@ BBFI.IRSimYt = mean(BBFI.SimYt, 2, "omitmissing");
 % A 2x3 plot of the boom-bust cycles comparing the two cases. Each subplot includes two axys, 
 % one for the TAOSim and the other for the Simulated variable. 
 
-corr_iip_tau_zt = corr(BBII.IRTAOSimZt, BBII.IRSimZt)
-corr_iip_tau_zn = corr(BBII.IRTAOSimNt, BBII.IRSimNt)
-corr_iip_tau_g = corr(BBII.IRTAOSimGt, BBII.IRSimGt)
+corr_iip_tau_zt = corr(BBII.IRTAOSimZt, BBII.IRSimZt);
+corr_iip_tau_zn = corr(BBII.IRTAOSimNt, BBII.IRSimNt);
+corr_iip_tau_g = corr(BBII.IRTAOSimGt, BBII.IRSimGt);
 
-corr_fip_tau_zt = corr(BBFI.IRTAOSimZt, BBFI.IRSimZt)
-corr_fip_tau_zn = corr(BBFI.IRTAOSimNt, BBFI.IRSimNt)
-corr_fip_tau_g = corr(BBFI.IRTAOSimGt, BBFI.IRSimGt)
+corr_fip_tau_zt = corr(BBFI.IRTAOSimZt, BBFI.IRSimZt);
+corr_fip_tau_zn = corr(BBFI.IRTAOSimNt, BBFI.IRSimNt);
+corr_fip_tau_g = corr(BBFI.IRTAOSimGt, BBFI.IRSimGt);
 
 
 
@@ -328,7 +328,11 @@ annotation(ff,'textbox',...
 
 % Save figure
 %print(ff,'-depsc2','Figures/Figure_BBFI_tax.eps')
-saveas(ff,'Figure11a','png');
+%saveas(ff,'Figure11a','png');
+filename = 'Figure11a.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 
 
 %% Imperfect Information
@@ -441,4 +445,9 @@ annotation(ff,'textbox',...
 % Save figure
 
 %print(ff,'-depsc2','Figures/Figure_BBII_tax.eps')
-saveas(ff,'Figure11b','png');
+%saveas(ff,'Figure11b','png');
+
+filename = 'Figure11b.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);

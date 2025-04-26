@@ -324,7 +324,12 @@ fig = gcf;
 fig.Position(3) = fig.Position(3) + 175;
 fig.Position(4) = fig.Position(4) + 50;
 
-saveas(f4,'Figure4_bb_drivers','png');
+%saveas(f4,'Figure4_bb_drivers','png');
+
+filename = 'Figure4.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 
 
 %% Figure 5
@@ -389,5 +394,10 @@ Lgnd = legend('show');
 Lgnd.Position(1) = 0.2405  ;
 Lgnd.Position(2) = 0.0101;
 
-saveas(f5, 'Figure5_responses_crises', 'png');
+%saveas(f5, 'Figure5_responses_crises', 'png');
+
+filename = 'Figure5.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 

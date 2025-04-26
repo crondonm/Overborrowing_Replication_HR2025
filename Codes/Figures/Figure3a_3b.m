@@ -92,7 +92,13 @@ legend('Social Planner','Decentralized Eqm','Location','NorthEast')
 xlim([-1.1, -0.6 ]) ;
 set(gca,'FontSize',Format.FontSizeAxes)
 set(f3a,'PaperPositionMode', 'auto')
-saveas(f3a,'Figure3a_ErgDist_Debt','png');
+%saveas(f3a,'Figure3a_ErgDist_Debt','png');
+
+filename = 'Figure3a.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
+
 
 
 
@@ -124,5 +130,9 @@ xlabel('Bond Holdings (Percent of GDP)','FontSize',Format.FontSize, 'Interpreter
 legend('Social Planner','Decentralized Eqm','Location','NorthEast')
 set(gca,'FontSize',Format.FontSizeAxes)
 set(f3b,'PaperPositionMode', 'auto')
-saveas(f3b,'Figure3b_ErgDist_DtoY','png');
+%saveas(f3b,'Figure3b_ErgDist_DtoY','png');
 
+filename = 'Figure3b.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);

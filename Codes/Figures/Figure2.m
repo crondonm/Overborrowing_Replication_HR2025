@@ -441,5 +441,11 @@ annotation(f1,'textbox',...
     'FontSize',22,...
     'EdgeColor','none');
 
-saveas(f1, 'Figure2', 'png');
+%saveas(f1, 'Figure2', 'png');
+
+filename = 'Figure2.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
+
 

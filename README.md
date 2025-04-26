@@ -48,13 +48,19 @@ The folder structure is as follows:
 
 ## 1. System Requirements
 
-The results were estimated on the University of Notre Dame's computer cluster. When using the exact grid sizes as in our baseline calibration, the codes require approximately 1 TB of RAM to execute.
+The model results were estimated on the University of Notre Dame's computer cluster. Executing the codes with the baseline calibration's grid sizes requires approximately 1 TB of RAM.
+
+**IMPORTANT**: If you wish to bypass model solving, please refer to points 4 and 5 below for instructions on downloading our simulated data.
 
 The codes are for MATLAB.
 
 ## 2. Instructions for Replication (Main Results)
 
-To replicate the full set of results, run the file main_file.m. This file will create the parameter and transition structures needed to solve the model. Follow the instructions in the file to generate the results. This will only replicate the baseline results. To replicate the sensitivity analysis, you will need to modify the parameters in Step0_Parameters.m. See points 3 and 4 below for instructions to replicate figures and tables.
+To replicate the full set of results, run the file main_file.m. This file will create the parameter and transition structures needed to solve the model. 
+
+If you follow the instructions in the file, you will replicate our baseline results. To replicate the sensitivity analysis, you will need to modify the parameters in Step0_Parameters.m. 
+
+**IMPORTANT** See points 3 and 4 below for instructions to replicate figures and tables.
 
 All the results from each of the following steps should be saved in:
 

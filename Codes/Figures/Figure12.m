@@ -288,7 +288,10 @@ fig.Position(4) = fig.Position(4) + 75;
 
 % Save figure
 
-saveas(ff,'Figure12','png');
+%saveas(ff,'Figure12','png');
 
-corr(BBII.IRYtot, BBII.IRTAOSim)
-corr(BBFI.IRYtot, BBFI.IRTAOSim)
+filename = 'Figure12.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
+

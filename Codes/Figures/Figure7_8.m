@@ -165,7 +165,12 @@ annotation(f7,'rectangle',...
 fig = gcf;
 fig.Position(3) = fig.Position(3) + 125;
 fig.Position(4) = fig.Position(4) + 30;
-saveas(f7,'Figure7_TaxFun_IIPvsFIP','png');
+%saveas(f7,'Figure7_TaxFun_IIPvsFIP','png');
+filename = 'Figure7.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
+
 Format.styles = {'-',':','-.','-.'};
 
 
@@ -192,6 +197,9 @@ xlim([0 50 ]) ;
 %ylim([-0.5 .07 ]) ;
 set(gca,'FontSize',Format.FontSizeAxes)
 set(f9,'PaperPositionMode', 'auto')
-saveas(f9,'Figure8_ErgDist_TaxesIIvsFI','png');
+%saveas(f9,'Figure8_ErgDist_TaxesIIvsFI','png');
 
-
+filename = 'Figure8.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);

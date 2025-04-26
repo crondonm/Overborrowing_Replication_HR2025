@@ -80,7 +80,12 @@ legend('Perfect Information: Recalibrated Economy','Imperfect Information','Loca
 xlim([0*100 1*100 ]) ;
 set(gca,'FontSize',Format.FontSizeAxes)
 set(f13,'PaperPositionMode', 'auto')
-saveas(f13,'Figure13_ErgDist_TaxesIIvsRecalibrated','png');
+%saveas(f13,'Figure13_ErgDist_TaxesIIvsRecalibrated','png');
+
+filename = 'Figure13.png';
+resolution = 300; % DPI
+% Export the graphics
+exportgraphics(gcf, filename, 'Resolution', resolution);
 
 
 
