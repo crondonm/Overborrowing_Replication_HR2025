@@ -62,6 +62,11 @@ Param.Sigma = [0.00461817366335938, 0.000379607811872954, 0;
 Param.beta = 0.83; % Argentina Average NFA-GDP: -29%
 Param.kappa = 0.335; % Argentin: Frequency of crises: 5.5%
 
+% For recalibrated model:
+% Param.beta = 0.53; 
+% Param.kappa = 0.3525; 
+
+
 % Following Bianchi (2011)
 
 Param.r = 0.04; % Annual Interest Rate
