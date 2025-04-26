@@ -56,13 +56,13 @@ The codes are for MATLAB.
 
 ## 2. Instructions for Replication (Main Results)
 
-To replicate the full set of results, run the file main_file.m. This file will create the parameter and transition structures needed to solve the model. 
+To replicate the full set of results, run `main_file.m`, which will create the necessary parameter and transition structures for solving the model and replicating our baseline findings. 
 
-If you follow the instructions in the file, you will replicate our baseline results. To replicate the sensitivity analysis, you will need to modify the parameters in Step0_Parameters.m. 
+Modifying parameters in `Step0_Parameters.m` is required for the sensitivity analysis.
 
-**IMPORTANT** See points 3 and 4 below for instructions to replicate figures and tables.
+**IMPORTANT:** Refer to points 3 and 4 below for instructions on replicating figures and tables. 
 
-All the results from each of the following steps should be saved in:
+All results from the subsequent steps should be saved in:
 
 ```
 ./Replication/Data
@@ -129,5 +129,4 @@ The files needed to replicate the calibration are located in:
 ./Replication/Calibration
 ```
 
-See the README file in that folder for instructions on how to
-replicate the calibration.
+See the README file in that folder for detailed instructions.
