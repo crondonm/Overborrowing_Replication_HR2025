@@ -1,0 +1,33 @@
+\begin{landscape}
+\begin{table}[]
+\centering
+\begin{adjustbox}{max width=1.5\textwidth} 
+\begin{threeparttable} 
+\caption{Sensitivity Analysis}
+\label{tab:senstable}
+\begin{tabular}{@{}lccccccccccccccccccccccccccccc@{}}
+\toprule 
+\toprule 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \multicolumn{12}{c}{\textit{Severity of Financial Crises}} \\ \cmidrule(l){19-30} 
+ &  &  &  &  &  &  &  & \multicolumn{4}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Debt-to-Output\\ Ratio\end{tabular}}} &  & \multicolumn{4}{c}{\textit{Probability of Crises}} &  & \multicolumn{4}{c}{\textit{Consumption}} & \multicolumn{4}{c}{\textit{RER}} & \multicolumn{4}{c}{\textit{Current Account}} \\ \cmidrule(lr){9-12} \cmidrule(lr){14-17} \cmidrule(l){19-30} 
+ &  & \multicolumn{2}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Welfare\\ Costs\end{tabular}}} &  & \multicolumn{2}{c}{\textit{\begin{tabular}[c]{@{}c@{}}Tax\\ on Debt\end{tabular}}} &  & \multicolumn{2}{c}{\textit{Perf. Info}} & \multicolumn{2}{c}{\textit{Imp. Info}} &  & \multicolumn{2}{c}{\textit{Perf. Info}} & \multicolumn{2}{c}{\textit{Imp. Info}} &  & \multicolumn{2}{c}{\textit{Perf. Info}} & \multicolumn{2}{c}{\textit{Imp. Info}} & \multicolumn{2}{c}{\textit{Perf. Info}} & \multicolumn{2}{c}{\textit{Imp. Info}} & \multicolumn{2}{c}{\textit{Perf. Info}} & \multicolumn{2}{c}{\textit{Imp. Info}} \\ \cmidrule(lr){3-4} \cmidrule(lr){6-7} \cmidrule(lr){9-12} \cmidrule(lr){14-17} \cmidrule(l){19-30} 
+ &  & \textit{Perf. Info} & \textit{Imp. Info} &  & \textit{Perf. Info} & \textit{Imp. Info} &  & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} &  & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} &  & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} & \textit{D.E} & \textit{S.P} \\ \midrule
+\textit{Baseline $(\beta = 0.83,\ \kappa = 0.335)$}  &  &     0.11 &     0.24 &  &     9.75 &    11.40 &  &   -27.15 &   -26.16 &   -29.02 &   -28.06 & &     4.15 &     1.98 &     5.53 &     1.73 &  &   -25.06 &   -24.55 &   -24.71 &   -21.08 &    66.57 &    62.20 &    70.90 &    59.15 &    17.41 &    14.20 &    15.48 &     8.28 \\
+\textit{$\beta = 0.90$}     &  &     0.06 &     0.11 &  &     4.33 &     4.83 &  &   -25.92 &   -24.85 &   -28.12 &   -27.17 & &     2.42 &     1.02 &     2.95 &     0.78 &  &   -22.94 &   -22.64 &   -22.15 &   -18.86 &    65.17 &    62.90 &    68.75 &    61.52 &    15.14 &    12.52 &    12.59 &     7.26 \\ 
+\textit{$\epsilon = 0.50$} &  &     0.17 &     0.27 &  &     9.66 &    11.33 &  &   -23.74 &   -22.55 &   -25.38 &   -24.37 & &     2.96 &     1.19 &     3.09 &     0.73 &  &   -28.13 &   -26.17 &   -29.00 &   -22.46 &   140.13 &   124.84 &   159.29 &   134.40 &    23.94 &    18.84 &    24.91 &    17.12 \\ 
+\textit{Recalibrated F.I Economy $(\beta = 0.53, \ \kappa = 0.3525)$} &  &     0.15 &     0.24 &  &    37.27 &    11.40 &  &   -28.95 &   -28.60 &   -29.02 &   -28.06 & &     5.50 &     4.16 &     5.53 &     1.73 &  &   -30.53 &   -29.15 &   -24.71 &   -21.08 &    86.25 &    77.00 &    70.90 &    59.15 &    25.89 &    21.91 &    15.48 &     8.28 \\ \midrule 
+\textit{Autocorrelation $\rho_g$ (15 \% less)}   &  &     0.12 &     0.25 &  &     9.97 &    11.59 &  &   -27.17 &   -26.15 &   -29.05 &   -28.06 & &     4.25 &     2.01 &     5.54 &     1.75 &  &   -24.98 &   -24.34 &   -24.70 &   -21.10 &    65.93 &    61.03 &    71.35 &    58.77 &    17.32 &    13.92 &    15.59 &     8.08\\
+\textit{Autocorrelation $\rho_g$ (15 \% more)} &  &     0.11 &     0.22 &  &     9.55 &    11.17 &  &   -27.11 &   -26.15 &   -28.99 &   -28.04 & &     4.03 &     1.95 &     5.40 &     1.76 &  &   -25.08 &   -24.68 &   -24.51 &   -21.18 &    67.44 &    63.68 &    70.94 &    59.29 &    17.55 &    14.55 &    15.52 &     8.46\\
+\textit{Volatility $\sigma_g$ (15 \% less)}         &  &     0.12 &     0.25 &  &    10.19 &    11.69 &  &   -27.49 &   -26.49 &   -29.15 &   -28.19 & &     4.40 &     2.03 &     5.80 &     1.81 &  &   -24.12 &   -23.41 &   -23.85 &   -20.15 &    65.80 &    61.23 &    69.85 &    58.18 &    17.45 &    14.08 &    15.37 &     8.11\\
+\textit{Volatility $\sigma_g$ (15 \% more)}       &  &     0.10 &     0.23 &  &     9.32 &    11.07 &  &   -26.82 &   -25.85 &   -28.90 &   -27.93 & &     3.93 &     1.92 &     5.23 &     1.68 &  &   -25.98 &   -25.66 &   -25.51 &   -21.98 &    67.42 &    63.58 &    72.42 &   -24.53 &    17.38 &    14.38 &    15.68 &     8.40\\
+\bottomrule
+\bottomrule
+\end{tabular}%
+\begin{tablenotes} 
+\footnotesize \baselineskip=14pt 
+\item Note: This table summarizes the key descriptive statistics for each alternative calibration tested. We measure the welfare costs of the pecuniary externality as the percentage of lifetime consumption lost relative to a Social Planner sharing the same information set. The probability of a financial crisis is defined as the frequency of crises occurring every 100 years. The consumption and RER changes during a financial crisis are the percentage changes relative to their respective ergodic means when the collateral constraint binds and the economy experiences a one-standard deviation current account reversal. 
+\end{tablenotes} 
+\end{threeparttable} 
+\end{adjustbox}
+\end{table}
+\end{landscape}
