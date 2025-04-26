@@ -1,13 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Overborrowing and Systemic Externalities in the Business Cycle Under Imperfect Information
 %
+% IMPORTANT: Make sure you have downloaded the neccesary files from the repository. See README.m for more details
+%
 % In this code: 
 %               1. Produce table 1 in the paper.
 %               2. Replicates algorithm to calibrate series. Note: Std
 %               Errors might change due to approximation issues in Pattern
 %               Search. Which happens approximately at the 5th decimal.
 %          
-%               
 % Authors:  Juan Herreño, jherrenolopera@ucsd.edu
 %               Carlos Rondón Moreno, crondon@bcentral.cl
 % Date:      March 2025
@@ -48,7 +49,7 @@ if replicate == 1
     % Specify column names and types
     opts.VariableNames = ["Year", "Agriculture", "Manufacturing", "Services", "Tradable", "SignalYT", "SignalYN", "Total", "Ratio"];
     opts.VariableTypes = ["double", "double", "double", "double", "double", "double", "double", "double", "double"];
-    filename = "Data.xlsx";
+    filename = "../Data/Data.xlsx";
     
     % Import the data
     Data = readtable(filename, opts, "UseExcel", false);
