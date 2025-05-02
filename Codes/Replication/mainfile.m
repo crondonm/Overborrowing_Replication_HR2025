@@ -2,6 +2,7 @@
 % Overborrowing and Systemic Externalities in the Business Cycle Under Imperfect Information
 %
 % In this code: Main File. 
+%               0. For detailed instructions check: README.md    
 %               1. Replicate full set of results
 %               2. This code was fully executed in the High-Performace
 %               Clúster at the University of Notre Dame. 

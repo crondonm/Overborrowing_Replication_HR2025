@@ -40,7 +40,7 @@ temp = [(abs(delta(1, 1) + abs(delta(1,2))) < 0.99),...
 if sum(temp) == length(temp)
     n = size(A, 1);
     X = zeros(n, T);
-    P_tt = 1*eye(n);
+    P_tt = eye(n);
 
     % Likelihood Evaluation
 

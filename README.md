@@ -115,11 +115,11 @@ Download the data and place it in the folder:
 ./Replication/Data
 ```
 
-Then, you can run run the individual files located in the Figures folder. Subfolder Appendix contains the codes to replicate the figures in the appendix.
+Then, you can run run the individual files located in the Figures folder. Subfolder Appendix contains the codes to replicate the figures in the appendix. Each file is named according to the figure it generates. For example, `Figure1.m` generates Figure 1 in the paper.
 
 ## 4. Tables
 
-The Tables folder contains the files that generate each table in the paper. Similar to the figures, you can either run `main_file.m` to generate the `.mat` files or download our data from the [link above](http://tiny.cc/HR2025rep) and place it in the ``Data`` folder.
+The Tables folder contains the files that generate each table in the paper. Similar to the figures, you can either run `main_file.m` to generate the `.mat` files or download our data from the [link above](http://tiny.cc/HR2025rep) and place it in the ``Data`` folder. Each file is named according to the table it generates. For example, `Table1.m` generates Table 1 in the paper.
 
 ## 5. Calibration
 

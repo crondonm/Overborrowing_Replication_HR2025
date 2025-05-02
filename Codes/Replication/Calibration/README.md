@@ -35,15 +35,17 @@ Matlab's global optimization toolbox is required to run the code. Full execution
 | `Table1_Calibration.m`  | Main script to replicate Table 1 in the paper. Includes the calibration and optimization algorithms. |
 | `LL_klm.m`        | Computes Log-likelihood function based on the Kalman Filter.          |
 | `LL_klm_opt.m`    | Evaluates Log-likelihood function at the optimal point. Needed to compute the standard errors of the estimated parameters.      |
-| `Hessiancsd.m`  | Cao (2008): Computes numerical hessian.          |
+| `Hessiancsd.m`  | Cao (2008): Computes numerical hessian using complex step.          |
 | `simannb.m`        | Goffe (1999) and modified by Soest (1999) and Su (2000): Executes Simulated Annealing .                  |
 | `Data.xlsx`        | Database used for the paper. See file for sources |
 | `Calibration.mat`  | Contains results as presented in the paper.                  |
 
-### Table 2
+### Table 1
 
-Table 2 summarizes the calibrated parameters along with those selected based on Bianchi (2011).
+Table 1 summarizes the calibrated parameters along with those selected based on Bianchi (2011).
 
 ## Notes
 
-Ensure that all files are in the same directory before running the scripts.
+-   Ensure that all files are in the same directory before running the scripts.
+
+-   To generate the initial guess, we run a combination of fmincon and simulated annealing. The initial guess is saved in the file `Calibration.mat`.

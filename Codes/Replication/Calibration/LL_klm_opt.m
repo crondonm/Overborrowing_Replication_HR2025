@@ -55,7 +55,7 @@ E = [0; 0; 0; 0];
           
     end
 
-        L = L - 0.5*T*N*log(2*pi);
+        L = -L + 0.5*T*N*log(2*pi);
 end
 
 
